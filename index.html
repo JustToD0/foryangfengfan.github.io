@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
   <h1 class="page-heading">Articles</h1>
 
   <ul class="post-list">
@@ -18,7 +17,7 @@ layout: default
         <div class="post-excerpt">
           {{ post.excerpt }}
           <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">More &raquo;</a>
           </p>
         </div>
       </li>
@@ -28,15 +27,15 @@ layout: default
   <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">上一页</a>
   {% else %}
-    <span class="previous">PREV</span>
+    <span class="previous"></span>
   {% endif %}
-  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">下一页</a>
   {% else %}
-    <span class="next ">NEXT</span>
+    <span class="next "></span>
   {% endif %}
 </div>
 
