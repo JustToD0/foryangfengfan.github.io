@@ -1,5 +1,5 @@
 # Site settings
-title: Another Blog
+title: 风帆大师
 url: "https://foryangfengfan.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
@@ -10,8 +10,7 @@ description: >
 email: workforyangfengfan@qq.com
 author: 风帆大师
 avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
-profile: Stay hungry,Stay foolish.
-Talk is cheap, show me your code.
+profile: Stay hungry,Stay foolish.\mTalk is cheap, show me your code.
 #twitter_username: twitter_username
 #github_username:  github_username
 
